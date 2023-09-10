@@ -170,5 +170,13 @@ WHERE Status = '?'
 DELETE FROM HouseSales
 WHERE Status = '?'
 
+-- Finally, we'll be changing the data type of the columns that are not string
+
+ALTER TABLE HouseSales ALTER COLUMN ID int
+ALTER TABLE HouseSales ALTER COLUMN Price int
+ALTER TABLE HouseSales ALTER COLUMN Bedrooms int
+UPDATE HouseSales 
+SET [Sale Date] = CONVERT(DATETIME,[Sale Date],101)
+ALTER TABLE HouseSales ALTER COLUMN [Sale Date] date
 
 -- Now the cleaning is complete and the dataset is ready for analysis

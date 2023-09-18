@@ -1,1 +1,1 @@
-  This is not a data analysis project. This is a numerical calculus project developed during college. Basically, it consists in a mathematical and computational way to solve structural mechanics calculations
+  This is not a data analysis project. This is a numerical calculus project developed during college. Basically, it consists in numerical analysis of non-linear structures using Newton's method (in other words, a mathematical and computational way to solve structural mechanics calculations).
